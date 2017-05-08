@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import com.xiangchao.demo.R;
 import com.xiangchao.demo.adapter.MyAdapter;
 import com.xiangchao.demo.bean.Data;
+import com.xiangchao.demo.bean.ImgInfo;
 import com.xiangchao.demo.constants.Constants;
 
 import java.util.ArrayList;
@@ -29,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
             data.imgList=new ArrayList<>();
             int count=1+new Random().nextInt(9);
             for(int j=0;j<count;j++){
-                data.imgList.add(Constants.urls[new Random().nextInt(Constants.urls.length)]);
+                ImgInfo info=new ImgInfo();
+                info.url=Constants.urls[new Random().nextInt(Constants.urls.length)];
+                data.imgList.add(info);
             }
             datas.add(data);
         }

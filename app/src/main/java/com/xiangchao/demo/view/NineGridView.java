@@ -11,7 +11,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 
+import com.xiangchao.demo.R;
 import com.xiangchao.demo.adapter.NineGridViewAdapter;
+import com.xiangchao.demo.adapter.NineGridViewWrapper;
 import com.xiangchao.demo.bean.ImgInfo;
 
 import java.util.ArrayList;

@@ -7,6 +7,6 @@ import java.util.List;
  */
 
 public class Data {
-    public List<String> imgList;
+    public List<ImgInfo> imgList;
     public int prise;
 }

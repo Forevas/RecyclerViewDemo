@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <ImageView
+    <!--<ImageView
         android:id="@+id/img"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:src="@mipmap/def_img_1_1" />
-
+        android:src="@mipmap/def_img_1_1" />-->
+    <com.xiangchao.demo.view.NineGridView
+        android:id="@+id/topic_item_nine_grid"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        app:ngv_gridSpacing="4dp"
+        app:ngv_maxSize="9"
+        app:ngv_mode="grid"/>
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
